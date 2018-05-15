@@ -24,4 +24,3 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:ellipsize="marquee" />
-<!-- From: file:/C:/Users/KimJungChul/AndroidStudioProjects/SmartMirror/actionbarsherlock/res/layout/sherlock_spinner_item.xml --><!-- From: file:/C:/Users/KimJungChul/AndroidStudioProjects/SmartMirror/actionbarsherlock/build/intermediates/bundles/debug/res/layout/sherlock_spinner_item.xml -->

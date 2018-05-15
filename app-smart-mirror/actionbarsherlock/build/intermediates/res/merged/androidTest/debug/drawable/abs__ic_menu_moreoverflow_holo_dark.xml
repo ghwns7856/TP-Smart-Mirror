@@ -16,4 +16,3 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@drawable/abs__ic_menu_moreoverflow_normal_holo_dark" />
 </selector>
-<!-- From: file:/C:/Users/KimJungChul/AndroidStudioProjects/SmartMirror/actionbarsherlock/res/drawable/abs__ic_menu_moreoverflow_holo_dark.xml --><!-- From: file:/C:/Users/KimJungChul/AndroidStudioProjects/SmartMirror/actionbarsherlock/build/intermediates/bundles/debug/res/drawable/abs__ic_menu_moreoverflow_holo_dark.xml -->

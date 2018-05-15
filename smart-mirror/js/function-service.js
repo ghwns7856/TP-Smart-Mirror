@@ -2,35 +2,35 @@ var FUNCTIONSERVICE = {
 	defaultHome : function($scope) {
 		console.debug("Ok, going to default view...");
         if(responsiveVoice.voiceSupport()) {
-          responsiveVoice.speak("홈으로 이동합니다.","Korean Female");
+          responsiveVoice.speak("홈 화면으로 갈게요.","Korean Female");
         }
         $scope.focus = "default";
 	},
 	whoIsSmartMirror : function($scope) {
 		console.log("Who is Smart Mirror");
 		if(responsiveVoice.voiceSupport()) {
-	          responsiveVoice.speak("저는 음성 인식이 가능한 스마트 미러입니다.","Korean Female");
+	          responsiveVoice.speak("저는 당신을 도와줄 수 있는 스마트 미러입니다.","Korean Female");
         }
 		$scope.focus = "whoissmartmirror";
 	},
 	goSleep : function($scope){
 		console.debug("Ok, going to sleep...");
         if(responsiveVoice.voiceSupport()) {
-          responsiveVoice.speak("자러 갈게요. 다음에 봐요!","Korean Female");
+          responsiveVoice.speak("다음에 봐요!","Korean Female");
         }
         $scope.focus = "sleep";
 	},
 	wake : function($scope) {
 		console.debug("Wake up...");
 		if(responsiveVoice.voiceSupport()) {
-            responsiveVoice.speak("안녕하세요. 미러에요!","Korean Female");
+            responsiveVoice.speak("안녕하세요!","Korean Female");
           }
     	$scope.focus = "default";
 	},
 	whatCanISay : function($scope){
 		console.debug("Here is a list of commands...");
         if(responsiveVoice.voiceSupport()) {
-          responsiveVoice.speak("다음은 이용 가능한 메뉴입니다.","Korean Female");
+          responsiveVoice.speak("명령어 리스트입니다.","Korean Female");
         }
         $scope.focus = "commands";
 	},
@@ -114,99 +114,6 @@ var FUNCTIONSERVICE = {
               $scope.focus = "subway";
             });
           });
-	},
-	photo : function(PHOTO_INDEX) {
-		console.debug("Take a Photo ...");
-		
-		if(responsiveVoice.voiceSupport()) {
-			responsiveVoice.speak("사진 촬영을 시작합니다.","Korean Female");
-		}
-		
-		/* 카메라 프로세스 */
-		var exec_photo = require('child_process').exec;
-	
-		/* 카메라 저장될 위치 설정 */
-		var photo_path = __dirname+"/public/photo/"+"photo"+PHOTO_INDEX+'.jpg';
-		
-		/* 라즈베리 카메라 촬영 명령*/
-		var cmd_photo = 'raspistill -o '+photo_path;
-		exec_photo(cmd_photo, function(error, stdout, stderr){
-			console.log('Photo Saved : ',photo_path);
-			require('./js/mailer').sendEmail(photo_path);
-		});
-		
-		// 4초 후 음성 합성 출력
-		setTimeout(function() {
-			if(responsiveVoice.voiceSupport()) {
-				responsiveVoice.speak("사진 촬영이 끝났습니다.","Korean Female");
-			}
-		}, 4000);
-		
-		
-
-	},
-	video : function(VIDEO_INDEX) {
-		console.debug("Take a Video ...");
-		
-		if(responsiveVoice.voiceSupport()) {
-            responsiveVoice.speak("비디오 촬영을 시작합니다.","Korean Female");
-        }
-		
-		/* 비디오 프로세스*/
-		var exec_video = require('child_process').exec;
-		/* 비디오 저장될 위치 설정*/
-		var video_path = __dirname+"/public/video/"+"video"+VIDEO_INDEX+'.h264';
-		/* 라즈베리 카메라 비디오 명령*/
-		var cmd_video = 'raspivid -o '+video_path+' -t 4000';
-		
-		/* 라즈베리 카메라 비디오 촬영 및 이메일 전송*/
-		exec_video(cmd_video, function(errror, stdout, stderr) {
-			console.log('Video Saved : ',video_path);
-			require('./js/mailer').sendEmail(video_path);
-		});
-		
-		// 4초 후 음성 합성 출력
-		setTimeout(function() {
-			if(responsiveVoice.voiceSupport()) {
-				responsiveVoice.speak("비디오 촬영이 끝났습니다.","Korean Female");
-			}
-		}, 4000);
-		
-	},
-	lightOn : function() {
-		console.debug("led on...");
-		
-    	if(responsiveVoice.voiceSupport()) {
-            responsiveVoice.speak("등을 켭니다.","Korean Female");
-        }
-		
-		/* Light on 프로세스*/
-		var exec_lighton = require('child_process').exec;
-		/* 커맨드 실행할 lightOn.js의 위치  */
-		var cmd_path = "/home/pi/RelaySwitch/lightOn.js";
-		/* 커맨드 명령*/
-		var cmd_lighton = 'node '+cmd_path;
-		
-		exec_lighton(cmd_lighton, function(errror, stdout, stderr) {
-			console.log('Start node lightOn.js');
-		});
-	},
-	lightOff : function() {
-		console.debug("led off...");
-		
-		if(responsiveVoice.voiceSupport()) {
-            responsiveVoice.speak("등을 끕니다.","Korean Female");
-        }
-		
-		/* Light off 프로세스*/
-		var exec_lightoff = require('child_process').exec;
-		/* 커맨드 실행할 lightOff.js의 위치  */
-		var cmd_path = "/home/pi/RelaySwitch/lightOff.js";
-		/* 커맨드 명령*/
-		var cmd_lightoff = 'node '+cmd_path;
-		
-		exec_lightoff(cmd_lightoff, function(errror, stdout, stderr) {
-			console.log('Start node lightOff.js');
-		});
 	}
+	
 };

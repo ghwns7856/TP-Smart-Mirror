@@ -11,7 +11,6 @@
         <item ></item>
         <item >미러 IP 설정</item>
         <item >미러 음성 명령 전송</item>
-        <item >스마트 미러</item>
         <!--<item >메뉴 4</item>-->
 
     </string-array>
@@ -20,7 +19,6 @@
     <!-- Keep them in order as the titles are in -->
     <array name="nav_drawer_icons">
         <item></item>
-        <item>@drawable/ic_setting</item>
         <item>@drawable/ic_map1</item>
         <item>@drawable/ic_map2</item>
         <item>@drawable/ic_setting</item>

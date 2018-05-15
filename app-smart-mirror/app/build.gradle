@@ -2,10 +2,10 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 22
-    buildToolsVersion '22.0.1'
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
-        applicationId "softwarek.kimjungchul.smartmirror"
+        applicationId "sub.totalproject.smartmirror"
         minSdkVersion 19
         targetSdkVersion 22
         versionCode 1

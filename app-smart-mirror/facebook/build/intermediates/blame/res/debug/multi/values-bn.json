@@ -1,0 +1,50 @@
+[
+    {
+        "outputFile": "C:\\Users\\hodg\\AndroidStudioProjects\\example-master\\example-master\\facebook\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bn\\values-bn.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 66,
+                    "endOffset": 117
+                },
+                "from": {
+                    "file": "C:\\Users\\hodg\\AndroidStudioProjects\\example-master\\example-master\\facebook\\res\\values-bn\\messenger_button_strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 2,
+                        "startOffset": 1122,
+                        "endColumn": 64,
+                        "endOffset": 1184
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "C:\\Users\\hodg\\AndroidStudioProjects\\app-smart-mirror\\facebook\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bn\\values-bn.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 66,
+                    "endOffset": 117
+                },
+                "from": {
+                    "file": "C:\\Users\\hodg\\AndroidStudioProjects\\app-smart-mirror\\facebook\\res\\values-bn\\messenger_button_strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 2,
+                        "startOffset": 1122,
+                        "endColumn": 64,
+                        "endOffset": 1184
+                    }
+                }
+            }
+        ]
+    }
+]

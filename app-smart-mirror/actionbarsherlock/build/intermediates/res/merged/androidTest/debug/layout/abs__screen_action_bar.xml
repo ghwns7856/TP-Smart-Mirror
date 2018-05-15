@@ -56,4 +56,3 @@ This is an optimized layout for a screen with the Action Bar enabled.
         android:gravity="center"
         style="?attr/actionBarSplitStyle" />
 </LinearLayout>
-<!-- From: file:/C:/Users/KimJungChul/AndroidStudioProjects/SmartMirror/actionbarsherlock/res/layout/abs__screen_action_bar.xml --><!-- From: file:/C:/Users/KimJungChul/AndroidStudioProjects/SmartMirror/actionbarsherlock/build/intermediates/bundles/debug/res/layout/abs__screen_action_bar.xml -->

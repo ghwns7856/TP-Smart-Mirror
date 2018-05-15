@@ -23,17 +23,17 @@ h5 {
     font-weight: 100;
 }
 h1 {
-	font-family: 'myfont-ttf', sans-serif, Serif;
-	font-size: 60px
+   font-weight : bold;
+   font-size : 70px;
 }
 
 dt {
     font-weight: 600;
     font-weight: bold;
-    font-size : 18px;
+    font-size : 25px;
 }
 dd {
-	font-size : 12px;
+	font-size : 18px;
 }
 /* Colors */
 .light-grey {
@@ -75,21 +75,35 @@ dd {
 }
 
 .top-left {
-    float: left;
+
 }
 
 .date {
+    position : relative;
+    clear : left;
+    margin : 50px auto; 
     font-size: 42px;
-    /* add 3/28 Mon. */
-    font-weight: bold;
+    font-weight: bold; 
+    text-align: center;
+    font-family: "KoPubDotumBold";
 }
 
 .time {
-    font-size: 100px;
+    text-align : center; 
+    position : relative;
+    clear : left;
+    margin : 0 auto;
+    font-size: 60px;
+    font-family: "KoPubDotumBold";
 }
 
 .top-right {
+font-size:20px;    
+    overflow : hidden;
+    z-index : 1; 
     float: right;
+color : #fff;
+font-family: "myfont-ttf"; 
 }
 
 .middle-center {
@@ -133,32 +147,17 @@ dd {
 	width: 800px;
 	height: 600px;
 }
-
-#titleCalendar {
-  /* add 3/28 Mon. */
-  background: linear-gradient(#4682B4,#141414);
-  margin-top: 50px;
-  font-size : 25px;
-  border-top-left-radius : 10px;
-  border-top-right-radius : 10px;
-  width: 350px;
-  text-align: center;
-}
-
-#calendar-sidebar {
-	width : 30px;
-	height : 168px;
-	float : left;
-	background: linear-gradient(#141414,#4682B4);
-	border-top-left-radius : 10px;
-	border-bottom-left-radius : 10px;
-}
-
 element.style {
 	margin-top : 0px;
 	margin-bottom: 0px;
 }
-
+#titleCalendar {
+   margin-top : 100px;
+   font-size : 25px;
+   text-align : center;
+   background-color : black;
+   width : 350px; 
+}
 ul.calendar {
     list-style: none;
     font-size: 22px;
@@ -169,10 +168,9 @@ ul.calendar {
 }
 
 .calendar .event{
-    /* add 3/28 Mon. */
      margin-bottom: 3px; 
     border-radius: 5px;
-    background : linear-gradient(to right, #7D7D7D, #7F7F7F);
+    background : black;
     width: 350px;
 }
 
@@ -200,36 +198,26 @@ ul.calendar {
 }
 
 .weather {
+    margin-top : 50px;
     margin-left: auto;
     display: inline-block;
     text-align: right;
     width: 250px;
-    /* add 3/28 Mon. */
     background-color: black;
     border-radius: 5px;
 }
 
-#weather-sidebar {
-	width : 30px;
-	height : 330px;
-	float : left;
-	background: linear-gradient(#141414,#4682B4);
-	border-top-left-radius : 10px;
-	border-bottom-left-radius : 10px;
-}
 
 #titleWeather {
   font-size : 25px;
-  /* add 3/28 Mon. */
   text-align : center;
   height:40px;
-  background: linear-gradient(#4682B4,#141414);
+  background: black;
   border-radius: 10px;
 }
 
 .weather-today .tempreture {
     font-size: 48px;
-    /* add 3/28 Mon. */
     color : white;
     font-weight: bold;
 }
@@ -245,12 +233,11 @@ ul.calendar {
 
 .weather-week {
     font-size: 22px;
-    /* add 3/28 Mon. */
     color: white;
     border-radius: 5px;
     margin-top: 3px;
     margin-left: 10px;
-    background : linear-gradient(to right, #7D7D7D, #7F7F7F);
+    background : black;
 }
 
 .weather-week .day {
@@ -258,7 +245,6 @@ ul.calendar {
     margin-right: 10px;
     width: 50px;
 
-    /* add 3/28 Mon. */
     color: white;
 }
 
@@ -267,44 +253,7 @@ ul.calendar {
     width: 60px;
 }
 
-.traffic {
-  /* add 3/28 Mon.*/
-  margin-top : 50px;
-  background-color: black;
-  /*background: linear-gradient(to bottom right,#A22020, #EE0000);*/
-  border-radius: 10px;
-}
-#traffic-sidebar {
-	width : 30px;
-	height : 103px;
-	float : left;
-	background: linear-gradient(#141414,#4682B4);
-	border-top-left-radius : 10px;
-	border-bottom-left-radius : 10px;
-}
 
-#titleTraffic {
-    /* add 3/28 Mon.*/
-    text-align : center;
-    font-size : 25px;
-    background: linear-gradient(#4682B4,#141414);
- 	border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-
-.traffic-information {
-    text-align: right;
-}
-
-
-#traffic-content {
-  /* add 3/28 Mon.*/
-  border-radius: 10px;
-  background : linear-gradient(to right, #7D7D7D, #7F7F7F);
-  font-weight : bold;
-  
-}
 
 
 /** Youtube IFRAME */
@@ -318,25 +267,6 @@ ul.calendar {
   font-size: 30px;
 }
 
-/** Noti */
-#titleNoti {
-  font-size : 25px;
-  /* add 3/28 Mon. */
-  background: linear-gradient(#4682B4,#141414);
-  border-top-left-radius : 10px;
-  border-top-right-radius : 10px;
-  width: 290px;
-  text-align: center;	
-}
-
-.noti {
-	text-align: left;
-}
-.noti-table {
-	background : linear-gradient(to right, #7D7D7D, #7F7F7F);
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
 /** News */
 .news{
 	width:600px; 
@@ -490,62 +420,6 @@ ul.calendar {
   left: 50%;
   z-index: 2;
 }
-
-i {
-  display: block;
-  position: absolute;
-  width: 140px;
-  height: 140px;
-  left: -70px;
-  top: -70px;
-  border-radius: 140px;
-  opacity: 0;
-  animation-name: scale;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-i:nth-child(1) {
-  animation-delay: 0.3s;
-}
-
-i:nth-child(2) {
-  animation-delay: 0.6s;
-}
-
-i:nth-child(3) {
-  animation-delay: 0.9s;
-}
-
-i:nth-child(4) {
-  animation-delay: 1.2s;
-}
-
-i:nth-child(5) {
-  animation-delay: 1.5s;
-}
-
-i:nth-child(6) {
-  animation-delay: 1.8s;
-}
-
-i:nth-child(7) {
-  animation-delay: 2.1s;
-}
-
-i:nth-child(8) {
-  animation-delay: 2.4s;
-}
-
-i:nth-child(9) {
-  animation-delay: 2.7s;
-}
-
-i:nth-child(10) {
-  animation-delay: 3s;
-}
-
 @keyframes scale {
   0% {
     transform: scale(2);

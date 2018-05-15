@@ -1,0 +1,50 @@
+[
+    {
+        "outputFile": "C:\\Users\\hodg\\AndroidStudioProjects\\app-smart-mirror\\facebook\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-tr\\values-tr.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 61,
+                    "endOffset": 112
+                },
+                "from": {
+                    "file": "C:\\Users\\hodg\\AndroidStudioProjects\\app-smart-mirror\\facebook\\build\\intermediates\\bundles\\debug\\res\\values-tr\\values-tr.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 61,
+                        "endOffset": 112
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "C:\\Users\\hodg\\AndroidStudioProjects\\example-master\\example-master\\facebook\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-tr\\values-tr.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 61,
+                    "endOffset": 112
+                },
+                "from": {
+                    "file": "C:\\Users\\hodg\\AndroidStudioProjects\\example-master\\example-master\\facebook\\build\\intermediates\\bundles\\debug\\res\\values-tr\\values-tr.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 61,
+                        "endOffset": 112
+                    }
+                }
+            }
+        ]
+    }
+]

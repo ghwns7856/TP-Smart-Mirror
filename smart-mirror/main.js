@@ -54,8 +54,8 @@ var express = require('express');
 var smartmirror = express();
 smartmirror.use(express.static(__dirname+"/public"));
 
-http.createServer(smartmirror).listen(9090,function() {
-	console.log('server on 9090...');
+http.createServer(smartmirror).listen(3000,function() {
+	console.log('server on 3000...');
 });
 
 /* GET 통신을 위한  */
@@ -67,7 +67,7 @@ var querystring = require('querystring');
 var events = require('events');
 global.sender = new events.EventEmitter();
 
-/* 스마트 미러 <-> Android APP 음성 명령 통신 */
+/* 스마트 미러 <-> APP 음성 명령 통신 */
 smartmirror.get('/android.do',function(req,res){
 	console.log(req.url);
 	var query = url.parse(req.url, true).query;
@@ -76,7 +76,7 @@ smartmirror.get('/android.do',function(req,res){
 	res.send("<h1>Android Command OK</h1>");
 });
 
-/* 스마트 미러 <-> Android APP Notification 통신 */
+/* 스마트 미러 <-> APP Notification 통신 */
 smartmirror.get('/noti.do',function(req,res){
 	console.log(req.url);
 	var query = url.parse(req.url, true).query;
