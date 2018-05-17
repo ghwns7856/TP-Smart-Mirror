@@ -60,4 +60,4 @@
     angular.module('SmartMirror')
         .factory('GeolocationService', GeolocationService);
 
-}());
+}()); 
