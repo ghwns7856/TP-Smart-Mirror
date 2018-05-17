@@ -3,14 +3,14 @@
 
     function MapService() {
         var service = {};
-        service.center = "Suwon, Korea"; //default map locaiton
-        service.zoom = 13; //default zoom is 13
+        service.center = "Suwon, Korea"; // default map locaiton
+        service.zoom = 13; // default zoom is 13
 
         service.generateMap = function(targetCenter, targetZoom) {
             if (targetCenter === undefined) {
                 targetCenter = service.center;
             } else{
-                //when we change the center of the map keep track of it
+                // when we change the center of the map keep track of it
                 service.center = targetCenter;
             }
             if (targetZoom === undefined) {
