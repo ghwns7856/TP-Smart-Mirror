@@ -1,7 +1,7 @@
 (function(annyang) {
   'use strict';
 
-  /** icals 연동된 구글 캘린더의 정보를 가져온다. */
+  /* icals 구글 캘린더 정보 */
   function CalendarService($window, $http, $q) {
     var service = {};
 
