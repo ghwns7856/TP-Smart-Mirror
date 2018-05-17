@@ -1,4 +1,4 @@
-(function(annyang) {
+(function(annyang) { 
     'use strict';
 
     function AnnyangService($rootScope) {
