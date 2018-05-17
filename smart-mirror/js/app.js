@@ -3,4 +3,4 @@
 
     angular.module('SmartMirror', ['ngAnimate']);
 
-}(window.angular));
+}(window.angular)); 
