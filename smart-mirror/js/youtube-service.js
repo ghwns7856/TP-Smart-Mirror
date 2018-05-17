@@ -5,7 +5,7 @@
         var service = {};
         service.youtube = null;
 
-        service.getYoutube = function(search_term,type){
+        service.getYoutube = function(search_term, type){
           return $http.get("https://www.googleapis.com/youtube/v3/search?part=snippet&q="+search_term+"&key="+config.youtube.key + "&maxResults=30&type="+type).
               then(function(response) {
                   service.youtube = response.data;
